@@ -1,0 +1,17 @@
+[paths]
+in_points = "data/in/in_points.shp"
+out_head_points = "data/out/out_head_points.shp"
+out_toe_points = "data/out/out_toe_points.shp"
+out_poly = "data/out/out_poly.shp"
+
+[fields]
+shoreline_id = "SHORE_ID"
+transect_id = "TRANS_ID"
+distance = "ORIG_LEN"        # position along transect
+elevation = "ELEV"
+mhhw = "MHHW"
+head_elev_mean = "HEAD_ELEV" # output polygon field (shapefile limit: 10 chars)
+
+[nodata]
+elevation = [-9999, 0]       # 0: adjust per bit-level of DEM data
+mhhw = [-9999]
