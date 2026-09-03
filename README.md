@@ -1,0 +1,1 @@
+In the `data/` folder, make two subdirectories named `in` and `out`. Put all input data into the `in` directory. Output data will be stored by the script in the `out` directory.
