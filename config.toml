@@ -1,17 +1,21 @@
 [paths]
-in_points = "data/in/in_points.shp"
-out_head_points = "data/out/out_head_points.shp"
-out_toe_points = "data/out/out_toe_points.shp"
-out_poly = "data/out/out_poly.shp"
+in_points = "data/in/ME_points.shp"
+out_head_points = "data/out/ME_head_01.shp"
+out_toe_points = "data/out/ME_toe_01.shp"
+out_poly = "data/out/ME_poly_01.shp"
 
 [fields]
 shoreline_id = "SHORE_ID"
 transect_id = "TRANS_ID"
 distance = "ORIG_LEN"        # position along transect
-elevation = "ELEV"
+elevation = "ELEV_2020"
 mhhw = "MHHW"
 head_elev_mean = "HEAD_ELEV" # output polygon field (shapefile limit: 10 chars)
 
 [nodata]
 elevation = [-9999, 0]       # 0: adjust per bit-level of DEM data
 mhhw = [-9999]
+
+[plotting]
+plot = true
+plot_id = [173, 172, 171]                 # transect IDs to plot, e.g. [12, 47, 103]
